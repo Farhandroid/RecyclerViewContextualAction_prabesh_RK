@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tanvir.testrecyclerviewcontextualaction.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/toolbar_layout"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/appbarLayout"
+        android:layout_marginTop="5dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
